@@ -1,0 +1,63 @@
+<div class="bgComponent">
+    <div class="container">
+      <div class="example-button-container">
+        <button mat-raised-button class="button btnnew" routerLink="/registerRole">
+          New Role
+        </button>
+      </div>
+      <mat-form-field class="bgShearch">
+        <mat-label>search Role</mat-label>
+        <input
+          matInput
+          (keyup)="applyFilter($event)"
+          placeholder="Ex. Admin"
+          #input
+        />
+      </mat-form-field>
+  
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+          <ng-container matColumnDef="NAME">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>NAME</th>
+            <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+          </ng-container>
+  
+          <ng-container matColumnDef="DESCRIPTION">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>DESCRIPTION</th>
+            <td mat-cell *matCellDef="let row">{{ row.description }}</td>
+          </ng-container>
+  
+          <ng-container matColumnDef="ACTIONS">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>ACTIONS</th>
+            <td mat-cell *matCellDef="let row">
+              <mat-icon
+                class="colorUpdate updateIcon"
+                [routerLink]="['/updateRole/', row._id]"
+                > <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#166FE5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></svg></mat-icon
+              >
+
+              <mat-icon class="colorDelete deleteIcon" (click)="deleteRole(row)"
+              > <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d0021b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></mat-icon
+            >
+
+            </td>
+          </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  
+          <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">
+              No user found "{{ input.value }}"
+            </td>
+          </tr>
+        </table>
+  
+        <mat-paginator
+          [pageSizeOptions]="[5, 10, 15]"
+          showFirstLastButtons
+        ></mat-paginator>
+      </div>
+    </div>
+  </div>
+  

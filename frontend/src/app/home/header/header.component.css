@@ -1,0 +1,74 @@
+.headerSpacer {
+  flex: 1 1 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #166FE5;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+ul {
+  margin: auto;
+}
+
+.bgHeader {
+  background-color: #166FE5;
+}
+
+mat-form-field {
+  margin: 5px 0px;
+  font-size: 15px;
+  width: 300px;
+  padding: 6px;
+}
+
+.dropdown-item{
+  background-color: #fff;
+}
+
+
+a:hover, a:active{
+  color: #a4dfff;
+  
+}
+
+.navbar{
+  background-color: #fff ;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+ul{
+  background-color: #fff;
+
+}
+
+
+ul li {
+  list-style:none;
+  display: inline-flex;
+  padding: 10px;
+
+  
+}
+
+li a {
+  text-decoration: none;
+  font-family: 'Fuzzy Bubbles', cursive;
+  color: #166FE5;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn1{
+  background-color: #8c83cf ;
+  
+}
+
+.botones{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+

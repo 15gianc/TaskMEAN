@@ -1,0 +1,55 @@
+
+<div class="bgComponent">
+    <div class="form">
+      <mat-card class="card">
+        <div class="back" routerLink="/listTask"><mat-icon>X</mat-icon></div>
+        <mat-card-title>Update Profile</mat-card-title>
+        <img width="150px" src="" alt="">
+        <mat-card-content>
+          <div class="container">
+            <mat-form-field>
+              <input
+                [(ngModel)]="registerData.name"
+                matInput
+                placeholder="Name and lastname"
+                required
+              />
+            </mat-form-field>
+
+            <mat-form-field>
+                <input
+                  [(ngModel)]="registerData.email"
+                  type="email"
+                  matInput
+                  placeholder="Email"
+                  required
+                  disabled
+                />
+              </mat-form-field>
+          
+            <mat-label>The password is not mandatory</mat-label>
+            <mat-form-field>
+              <input
+                [(ngModel)]="registerData.password"
+                type="password"
+                matInput
+                placeholder="Password"
+              />
+            </mat-form-field>
+            
+            
+          
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="container-fluid btn">
+            <div>
+          <button (click)="updateProfile()" class="button" mat-raised-button>
+            Update
+          </button>
+        </div>
+        </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>

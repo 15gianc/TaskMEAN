@@ -1,0 +1,37 @@
+
+<div class="bgComponent">
+  <div class="form">
+    <mat-card class="card">
+      <div class="back" routerLink="/listUser"><mat-icon>X</mat-icon></div>
+
+      <mat-card-title>Update role</mat-card-title>
+      <mat-card-content>
+        <div class="container">
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.name"
+              matInput
+              placeholder="Role name"
+              required
+              />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.description"
+              matInput
+              placeholder="Description"
+              required
+            />
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="container-fluid btn">
+        <button (click)="updateRole()" class="button" mat-raised-button>
+          Update
+        </button>
+      </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<!-- <div (click)="open()" *ngIf="isClosed" class="cardContainer-icon">
+    <img src="/assets/robot.png" alt="iconorobot" width="80" />
+  </div>
+  
+  <div *ngIf="!isClosed" class="card text-center cardContainer">
+    <div (click)="close()" class="card-header">CHAT</div>
+    <div class="card-body">
+      <div id="messages">
+        <span
+          *ngFor="let mensaje of mensajes"
+          [ngClass]="
+            mensaje.emisor == 'bot' ? 'recibido p-2 mt-2' : 'enviado p-2 mt-2'
+          "
+        >
+          {{ mensaje.texto }}
+        </span>
+      </div>
+    </div>
+    <form class="card-footer text-muted input-group" (ngSubmit)="enviarMensaje()">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Aa"
+        [(ngModel)]="nuevoMensaje"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <div class="input-group-append" (click)="enviarMensaje()">
+        <span class="input-group-text" id="basic-addon2">
+          <img
+            class="imgEnviar"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Breeze-document-send-16.svg/768px-Breeze-document-send-16.svg.png"
+            alt="send message"
+            width="25px"
+          />
+        </span>
+      </div>
+    </form>
+  </div> -->

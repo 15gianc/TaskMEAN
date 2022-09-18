@@ -1,0 +1,65 @@
+.cardContainer {
+    width: 300px;
+    height: 50px;
+    position: fixed;
+    right: 60px;
+    bottom: 20rem;
+    z-index: 999999;
+    margin-bottom: 50px;
+  }
+  
+  .cardContainer-icon {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 15px;
+    z-index: 999999;
+    margin-bottom: 90px;
+  }
+  
+  .cardContainer-icon:hover {
+    transition: transform 330ms ease-in-out;
+    transform: scale(0.9);
+  }
+  
+  .card-header {
+    background-color: rgb(142, 107, 224);
+    color: azure;
+    font-weight: 700;
+  }
+  
+  .card-body {
+    padding: 0.5rem;
+    background-color: rgb(235, 235, 235);
+    min-height: 300px !important;
+    max-height: 300px !important;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .imgEnviar:active {
+    transform: scale(0.9);
+  }
+  
+  .enviado {
+    display: block;
+    float: right;
+    background-color: #7267CB;
+    color: azure;
+    min-width: 50.01%;
+    max-width: 50.01%;
+    border-radius: 10px;
+    text-align: right;
+  }
+  
+  .recibido {
+    display: block;
+    float: left;
+    background-color: rgb(154, 158, 165);
+    color: azure;
+    min-width: 50.01%;
+    max-width: 50.01%;
+    border-radius: 10px;
+    text-align: left;
+  }
