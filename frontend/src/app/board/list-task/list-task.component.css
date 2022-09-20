@@ -18,36 +18,34 @@
 .btnDone {
   background-color: #3cb44b;
   color: #ffffff;
-  font-family: 'Fuzzy Bubbles', cursive;
-
-  
+  font-family: 'Poppins', sans-serif;
   
 }
 
 .btnInProgress {
   background-color: #f58231;
   color: #ffffff;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
 
 }
 
 .btnToDo {
   background-color: #e6194b;
   color: #ffffff;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
 
 }
 
 .btnSelectDone {
   color: #3cb44b;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
 
 }
 
 .btnSelectInProgress {
   color: #f58231;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
 
 
@@ -55,7 +53,7 @@
 
 .btnSelectTodo {
   color: #e6194b;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   
 }
@@ -151,9 +149,8 @@ h2 {
   text-align: center;
   margin-top: 10px;
   border-radius: 4px ;
-  font-family: 'Fuzzy Bubbles', cursive;
-
- 
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 .cdk-drag-preview {
@@ -181,7 +178,7 @@ h2 {
 }
 
 .txt{
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: black;
 
@@ -201,10 +198,11 @@ h2 {
 }
 
 .demo-inline-calendar-card {
-  width: 400px;
+  width: 300px;
   color: #764db8;
   position: fixed;
   right: 60px;
+  bottom: 10px;
   margin-top: 30px;
   z-index: 99999999;
 
@@ -220,7 +218,7 @@ h2 {
 
 .container{
   width: 100%;
-  height: 787px;
+  height: 789px;
   padding-bottom: 553px;
 }
 
@@ -232,9 +230,10 @@ h2 {
 }
 
 .botones{
-  margin: 15px;
+  margin: 30px;
   margin-left: auto;
   margin-bottom: auto;
   
 }
+
 

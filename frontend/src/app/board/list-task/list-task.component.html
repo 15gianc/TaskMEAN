@@ -4,12 +4,7 @@
 <div class="container container-fluid">
   <div class="row">
 
-      <mat-card *ngIf="!isClosed" class="demo-inline-calendar-card">
-        <mat-calendar (selectedChange)="selected = $event"></mat-calendar>
-      </mat-card>
-      <div (click)="change()"  class="cardContainer-icon">
-      <img class="calendario" src="../../../assets/CALENDAR.png" alt="calendario" width="50">
-      </div>
+      
     <div class="example-container col">
       <h2>To do</h2>
 
@@ -285,18 +280,35 @@
 </div>
 
 <div class="contenedor">
+
+  <div class="botones">
+    <button mat-mini-fab  class="btn2">
+      <mat-card *ngIf="!isClosed" class="demo-inline-calendar-card">
+        <mat-calendar (selectedChange)="selected = $event"></mat-calendar>
+      </mat-card>
+      <div (click)="change()"  class="cardContainer-icon">
+      <img  title="Calendar" src="../../../assets/calendarrioo.png" alt="calendario" width="35">
+      </div>
+    </button>
+    
+
+    
+  </div>
+
   <div class="botones">
     <button mat-mini-fab  class="btn1">
       <a href="http://localhost:4200/listTask">
-        <img src="../../../assets/ingredients-list.png"
+        <img title="List Task" src="../../../assets/ingredients-list.png"
       /></a>
     </button>
   </div>
   <div class="botones">
     <button mat-mini-fab  class="btn2">
       <a href="http://localhost:4200/saveTask"
-        ><img src="../../../assets/plus-math--v1.png"
+        ><img title="Create Task" src="../../../assets/plus-math--v1.png"
       /></a>
     </button>
   </div>
+
+
 </div>

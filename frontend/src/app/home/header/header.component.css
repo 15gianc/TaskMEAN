@@ -5,8 +5,8 @@
 a {
   text-decoration: none;
   color: #166FE5;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 ul {
@@ -36,7 +36,8 @@ a:hover, a:active{
 
 .navbar{
   background-color: #fff ;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 ul{
@@ -49,13 +50,14 @@ ul li {
   list-style:none;
   display: inline-flex;
   padding: 10px;
-
+  font-weight: bold;
   
 }
 
 li a {
   text-decoration: none;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
   color: #166FE5;
   font-weight: 500;
   font-size: 15px;

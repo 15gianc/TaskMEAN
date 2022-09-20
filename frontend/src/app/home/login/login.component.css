@@ -65,9 +65,12 @@ mat-card-title {
 
   a{
    text-decoration:none !important;
+   
    }
    h1,h2,h3{
-   font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
    }
     .myform{
 
@@ -133,7 +136,8 @@ max-width: 500px;
    .container{
     width: 100%;
     height: 77.1%;
-  font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Poppins', sans-serif;
+
  
    }
 

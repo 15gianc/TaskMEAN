@@ -7,7 +7,8 @@
     margin-bottom: 10px;
     background-color: #fff;
     color: black;
-  font-family: 'Fuzzy Bubbles', cursive;
+      font-family: 'Poppins', sans-serif;
+
 
   }
 
@@ -27,7 +28,8 @@
     min-width: 150px;
     max-width: 500px;
     width: 100%;
-  font-family: 'Fuzzy Bubbles', cursive;
+      font-family: 'Poppins', sans-serif;
+
 
   }
    
@@ -46,12 +48,14 @@
    
   mat-card-title {
     text-align: center;
+    font-weight: bold;
   }
   
   .back{
     display: flex;
     justify-content: end;
     font-weight: 600;
+    
   }
   
   .back:hover{
@@ -59,6 +63,7 @@
   }
 
   mat-form-field{
-  font-family: 'Fuzzy Bubbles', cursive;
+      font-family: 'Poppins', sans-serif;
+
 
   }

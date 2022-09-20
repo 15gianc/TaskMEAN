@@ -9,7 +9,8 @@
     margin-bottom: 10px;
     background-color: #ffffffc0;
     color: #000000;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Poppins', sans-serif;
+
   }
    
   .card {
@@ -30,13 +31,14 @@
    
   .bgComponent {
     width: 100%;
-    height: 832px;
+    height: 830px;
     padding-bottom: 30%;
   }
    
   mat-card-title {
     text-align: center;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
   }
   
   .back{
@@ -45,11 +47,13 @@
   }
 
   mat-form-field{
-    font-family: 'Fuzzy Bubbles', cursive;
+      font-family: 'Poppins', sans-serif;
+
   }
 
   mat-label{
-    font-family: 'Fuzzy Bubbles', cursive;
+      font-family: 'Poppins', sans-serif;
+
   }
 
   .btn{

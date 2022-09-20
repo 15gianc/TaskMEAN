@@ -17,7 +17,7 @@
 table {
   width: 100%;
   background-color: #f3f3f3;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
     
 }
 
@@ -40,8 +40,7 @@ th {
   margin-top: 50px;
   padding-left: 80px;
   padding-right: 80px;
-  font-family: 'Fuzzy Bubbles', cursive;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .mat-icon {
@@ -83,7 +82,7 @@ th {
 
 mat-paginator{
   background-color: #166FE5;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 12px;
   color: #000;
@@ -91,7 +90,8 @@ mat-paginator{
 }
 
 .btnnew{
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Poppins', sans-serif;
+
 
 }
 
